@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE> Welcome! </TITLE>
+<style>
+@font-face {
+    font-family: 'Exo-Light'; 
+    src: url('font/Exo-Light.otf');
+	}
+@font-face {	
+	font-family: 'Exo-Bold'; 
+    src: url('font/Exo-Bold.otf');
+}
+
+h3{
+font-family: 'Exo-Light'; 
+}
+
+h1,font
+{
+font-family: 'Exo-Bold'; 
+}
+
+.slider-wrap {
+  width: 700px;
+  height: 240px;
+  margin: 20px auto;
+}
+.slider {
+  overflow-x: scroll;
+}
+.holder {
+  width: 300%;
+}
+.slide {
+  float: left;
+  width: 700px;
+  height: 240px;
+  position: relative;
+  background-position: 0 0;
+}
+.temp {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  bottom: 15px;
+  left: 15px;
+  font-family: 'Exo-Bold';
+  font-weight: 100;
+  color:black;
+}
+#slide-0 {
+  background-image: url(slider/1.png);
+}
+#slide-1 {
+  background-image: url(slider/2.png);
+}
+#slide-2 {
+  background-image: url(slider/3.png);
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(transparent, black);
+}
+.slider-nav {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+.slider-nav a.active {
+  background: #999;
+}
+
+</style>
+</HEAD>
+<BODY background="content/back.jpg">
+<br>
+<h1 align="center">Welcome to <font color="darkgreen">LOGIN MENU</font></h1>
+<center>
+<div class="slider-wrap">
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"><span class="temp">1</span></div>
+      <div class="slide" id="slide-1"><span class="temp">2</span></div>
+        <div class="slide" id="slide-2"><span class="temp">3</span></div>
+    </div>
+  </div>
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">Slide 0</a> 
+    <a href="#slide-1">Slide 1</a> 
+    <a href="#slide-2">Slide 2</a> 
+  </nav>
+</div>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<h3>If you don't have an account please Create an Account </h3>
+<BR>
+<a href="new.html">
+<button type="button" ><font>CREATE A NEW ACCOUNT</font></button>
+</a>
+<BR>
+<h3>Login to your account</h3>
+<a href="loginmenu.html">
+<button type="button" ><font>LOG IN</font></button>
+</a>
+<br>
+</center>
+
+</BODY>
+</HTML>
